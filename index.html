@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Declaración del tipo de documento, indica que es HTML5 -->
+<html lang="es">
+<!-- Apertura del documento HTML, idioma español -->
+<head>
+  <!-- Metadatos de la página -->
+  <meta charset="utf-8"> <!-- Configuración de caracteres UTF-8 para soportar acentos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Escala para dispositivos móviles -->
+  <title>Ejemplo básico: HTML + CSS separados</title> <!-- Título de la pestaña -->
+  <!-- Vínculo a la hoja de estilos base -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Vínculo a la hoja de estilos de layout -->
+  <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+  <!-- Encabezado principal del sitio -->
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Mi Sitio</h1> <!-- Título principal -->
+      
+      <nav class="main-nav"> <!-- Menú de navegación -->
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main class="container">
+    <article> <!-- Artículo central -->
+      <h2>¿Qué verás aquí?</h2>
+      <p>Esta es una página de ejemplo que muestra una estructura DOM sencilla.</p>
+
+      <section> <!-- Sección dentro del artículo -->
+        <h3>Lista de puntos</h3>
+        <ul>
+          <li>Separar estilos por responsabilidad (base vs layout)</li>
+          <li>Usar contenedores para centrar contenido</li>
+          <li>Hacer la página responsive con reglas simples</li>
+        </ul>
+      </section>
+
+      <button id="demoBtn">Hazme clic</button> <!-- Botón de demostración -->
+    </article>
+
+    <aside class="sidebar"> <!-- Barra lateral -->
+      <h4>Enlaces útiles</h4>
+      <p>Información adicional o enlaces.</p>
+    </aside>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mi Sitio - Ejemplo para principiantes</p>
+    </div>
+  </footer>
+
+  <!-- Script para interacción con el DOM -->
+  <script>
+    document.getElementById('demoBtn').addEventListener('click', function() {
+      alert('¡Has hecho clic! Esto demuestra cómo JavaScript puede interactuar con el DOM.');
+    });
+  </script>
+</body>
+</html>
